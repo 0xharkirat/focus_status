@@ -30,4 +30,8 @@ abstract class FocusStatusPlatform extends PlatformInterface {
   Future<int?> getFocusStatus() {
     throw UnimplementedError('getFocusStatus() has not been implemented.');
   }
+
+  Future<int?> getDNDAccess() {
+    throw UnimplementedError('getDNDAccess() has not been implemented.');
+  }
 }

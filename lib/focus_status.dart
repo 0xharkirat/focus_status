@@ -9,4 +9,8 @@ class FocusStatus {
   Future<int?> getFocusStatus() {
     return FocusStatusPlatform.instance.getFocusStatus();
   }
+
+  Future<int?> getDNDAccess() {
+    return FocusStatusPlatform.instance.getDNDAccess();
+  }
 }

@@ -20,4 +20,10 @@ class MethodChannelFocusStatus extends FocusStatusPlatform {
     final status = await methodChannel.invokeMethod<int>('getFocusStatus');
     return status;
   }
+
+  @override
+  Future<int?> getDNDAccess() async {
+    final dndAccess = await methodChannel.invokeMethod<int>('getDNDAccess');
+    return dndAccess;
+  }
 }
