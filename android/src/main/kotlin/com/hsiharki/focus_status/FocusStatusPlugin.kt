@@ -52,7 +52,7 @@ class FocusStatusPlugin: FlutterPlugin, MethodCallHandler {
     //     val intent = Intent(android.provider.Settings.ACTION_NOTIFICATION_POLICY_ACCESS_SETTINGS)
     //     context.startActivity(intent)
     // }
-    return notificationManager.importance
+   
     return notificationManager.currentInterruptionFilter
   }
 
